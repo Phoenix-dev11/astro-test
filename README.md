@@ -24,13 +24,31 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## Deployment and Git LFS (video not showing)
+## Deploying to Vercel with Git LFS (video not showing)
 
-The video `public/assets/pill.webm` is tracked with **Git LFS**. If the video doesn’t display after deploy, the build likely has only the LFS pointer, not the real file.
+Large assets (e.g. `public/assets/*.webm`) are tracked with **Git LFS**. If the video doesn’t display on Vercel, the build had only the LFS pointer file, not the real video.
 
-- **Vercel:** Install the [Git LFS](https://github.com/marketplace/actions/git-lfs) action, or in Project Settings → General → Git set “Include Git LFS objects” (if available), or add a build step that runs `git lfs pull` before `npm run build`.
-- **Netlify:** Enable [Git LFS support](https://docs.netlify.com/configure-builds/file-conversions/#git-lfs) or run `git lfs pull` in a build command, e.g. `git lfs pull && npm run build`.
-- **Other CI:** Before `npm run build`, run `git lfs install` and `git lfs pull` so the real file is in `public/assets/` when the site is built.
+### Option 1: Enable Git LFS in Vercel (recommended)
+
+1. Open your project on [Vercel](https://vercel.com) → **Settings** → **Git**.
+2. Turn **on** the option **“Include Git LFS objects”** (or “Git LFS support”).
+3. **Redeploy** the project (Deployments → ⋮ → Redeploy).
+
+See [Vercel’s Git LFS support](https://vercel.com/changelog/git-lfs-support) and [Git settings](https://vercel.com/docs/project-configuration/git-settings).
+
+### Option 2: Build command (already in this repo)
+
+This project’s `vercel.json` sets the build command to:
+
+```bash
+git lfs pull && npm run build
+```
+
+So LFS files are pulled before the Astro build. If the dashboard option isn’t available, this should be enough. **Redeploy** after pushing.
+
+### After enabling LFS
+
+Redeploy once (trigger a new deployment). The real video file will be in `public/` during build and copied to `dist/`, so the video should display.
 
 ## 🧞 Commands
 
