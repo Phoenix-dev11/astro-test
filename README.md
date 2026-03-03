@@ -28,27 +28,19 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 Large assets (e.g. `public/assets/*.webm`) are tracked with **Git LFS**. If the video doesn’t display on Vercel, the build had only the LFS pointer file, not the real video.
 
-### Option 1: Enable Git LFS in Vercel (recommended)
+### Enable Git LFS in Vercel
 
 1. Open your project on [Vercel](https://vercel.com) → **Settings** → **Git**.
 2. Turn **on** the option **“Include Git LFS objects”** (or “Git LFS support”).
 3. **Redeploy** the project (Deployments → ⋮ → Redeploy).
 
+Vercel will fetch LFS objects during the clone step. Do **not** use `git lfs pull` in the build command—it fails on Vercel with “missing protocol” because the LFS endpoint is not available in that environment.
+
 See [Vercel’s Git LFS support](https://vercel.com/changelog/git-lfs-support) and [Git settings](https://vercel.com/docs/project-configuration/git-settings).
 
-### Option 2: Build command (already in this repo)
+### If the video still doesn’t show
 
-This project’s `vercel.json` sets the build command to:
-
-```bash
-git lfs pull && npm run build
-```
-
-So LFS files are pulled before the Astro build. If the dashboard option isn’t available, this should be enough. **Redeploy** after pushing.
-
-### After enabling LFS
-
-Redeploy once (trigger a new deployment). The real video file will be in `public/` during build and copied to `dist/`, so the video should display.
+Host the video elsewhere (e.g. [Vercel Blob](https://vercel.com/docs/storage/vercel-blob), Cloudinary, or a CDN), put the direct file URL in an env var (e.g. `PUBLIC_PILL_VIDEO_URL`), and use that as the `<video src>` in your page.
 
 ## 🧞 Commands
 
