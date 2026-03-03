@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Font Test - RAGEBITE</title>
+		<link rel="preconnect" href="https://use.typekit.net" crossorigin />
+		<link rel="stylesheet" href="https://use.typekit.net/xtg2fqq.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Patrick+Hand+SC&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
+		<style>
+			.sample { font-size: 2rem; padding: 1rem; margin: 0.5rem 0; border: 1px solid #333; }
+			.zcool { font-family: "zcool-qingke-huangyou", "ZCOOL QingKe HuangYou", sans-serif; }
+			.avant { font-family: "itc-avant-garde-gothic-pro", "Chakra Petch", sans-serif; }
+			.chakra { font-family: "chakra-petch", "Chakra Petch", sans-serif; }
+			.patrick { font-family: "patrick-hand-sc", "Patrick Hand SC", cursive; }
+			.fallback { font-family: sans-serif; }
+		</style>
+	</head>
+	<body class="bg-[#0E0E0E] p-8 text-white">
+		<h1 class="text-2xl font-bold mb-6">Font loading test</h1>
+		<p class="text-neutral-400 mb-8">
+			If fonts load correctly, each row should look distinctly different. 
+			Check DevTools → Network for use.typekit.net requests.
+		</p>
+		<div class="space-y-2">
+			<div class="sample zcool">ZCOOL QingKe HuangYou — ABC 123</div>
+			<div class="sample avant">ITC Avant Garde Gothic Pro — ABC 123</div>
+			<div class="sample chakra">Chakra Petch — ABC 123</div>
+			<div class="sample patrick">Patrick Hand SC — ABC 123</div>
+			<div class="sample fallback text-neutral-500">System fallback (sans-serif)</div>
+		</div>
+		<div class="mt-12 p-4 bg-white/5 rounded text-sm text-neutral-400">
+			<p><strong>If all rows look the same:</strong></p>
+			<ul class="list-disc list-inside mt-2 space-y-1">
+				<li>Add <code>localhost</code> and your domain to Adobe Fonts kit → Settings → Domains</li>
+				<li>Ensure kit xtg2fqq is published</li>
+				<li>Disable ad blockers (they may block Typekit)</li>
+				<li>Check Network tab: <code>use.typekit.net/xtg2fqq.css</code> should return 200</li>
+			</ul>
+		</div>
+		<a href="/" class="inline-block mt-6 text-lime hover:underline">← Back to main page</a>
+	</body>
+</html>

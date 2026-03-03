@@ -1,0 +1,637 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content="{Astro.generator}" />
+    <title>RAGEBITE</title>
+    <!-- Fonts - same setup as fonts-test.astro -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/xtg2fqq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Patrick+Hand+SC&family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-[#0E0E0E] font-chakra text-white antialiased">
+    <main
+      class="mx-auto w-full lg:max-w-[1440px] px-[10px] py-[50px] sm:px-5 md:px-10 lg:px-5 md:py-[100px]"
+    >
+      <!-- FEATURED WORK Section -->
+      <section class="relative border-b border-[#1C1F23] pb-[80px]">
+        <p
+          class="mb-[30px] font-bold text-sm md:text-base text-[#454F5C] !leading-[100%] tracking-[14%]"
+        >
+          // &nbsp;FEATURED WORK
+        </p>
+        <div
+          class="flex flex-col gap-[25px] lg:gap-8 lg:flex-row lg:items-start lg:justify-between justify-start"
+        >
+          <div class="max-w-[796px] text-[#E4FAFB]">
+            <h2
+              class="font-zcool flex items-start text-[52px] md:text-[80px] !leading-[100%] tracking-[0%] xl:text-[100px] mr-[-8px]"
+            >
+              <span class="md:!text-[47px] hidden md:block mr-[30px] -mt-[10px]"
+                >//</span
+              >
+              TYPE OF PRODUCTS
+            </h2>
+            <div class="flex flex-col md:flex-row gap-5 md:items-center">
+              <h2
+                class="font-zcool !leading-[100%] text-[52px] tracking-[0%] md:text-[80px] xl:text-[100px]"
+              >
+                <span>WE BUILT BEFORE</span>
+              </h2>
+              <span
+                class="flex flex-col text-[16px] leading-[90%] font-gochi md:text-[18px] xl:text-[22px] tracking-tight md:max-w-[70px]"
+              >
+                OR ANYTHING IN BETWEEN
+              </span>
+            </div>
+          </div>
+          <!-- Products counter - logo section -->
+          <div class="flex flex-col lg:items-end">
+            <div class="flex flex-col gap-0">
+              <!-- 63 + PRODUCTS BUILT column -->
+              <div class="flex items-center lg:justify-end">
+                <span
+                  class="font-zcool text-[102px] leading-[80%] text-[#61FFFF] md:text-[120px] xl:text-[162px] tracking-[0%]"
+                  >63</span
+                >
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="/assets/logo.png"
+                    alt="RAGEBITE"
+                    class="h-auto xl:w-[201px] md:w-[160px] w-[100px]"
+                    id="logo-img"
+                  />
+                  <span
+                    class="font-zcool ragebite-text hidden text-3xl font-bold leading-none md:text-4xl lg:text-5xl"
+                    id="logo-fallback"
+                    style="letter-spacing: 0.09em"
+                    >RAGEBITE</span
+                  >
+                </div>
+              </div>
+              <!-- POWERED BY RAGEBITE column -->
+              <div id="logo-container">
+                <span
+                  class="text-[40px] leading-[120%] font-zcool tracking-[0%] text-[#E4FAFB] md:text-[42px] xl:text-[50px]"
+                  >PRODUCTS BUILT</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#contact"
+          class="block w-full mt-[50px] md:mt-[80px] lg:w-[500px]"
+        >
+          <span
+            class="flex w-full  items-center justify-center lg:justify-start"
+          >
+            <svg
+              width="17"
+              height="46"
+              viewBox="0 0 16 46"
+              fill="none"
+              class="shrink-0 border-none mr-[-1px]"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.82843 1.17157C5.57857 0.421428 6.59599 0 7.65685 0H16V46H7.65685C6.59599 46 5.57857 45.5786 4.82843 44.8284L1.17157 41.1716C0.421428 40.4214 0 39.404 0 38.3431V7.65685C0 6.59599 0.421427 5.57857 1.17157 4.82843L4.82843 1.17157Z"
+                fill="#99FF00"
+              />
+            </svg>
+
+            <span
+              class="relative flex min-w-0 flex-1 w-full items-center justify-center bg-[#99FF00] font-chakra border-none h-[46px] text-black text-[12px] md:text-[14px] font-bold uppercase tracking-[14%]"
+              >GET IN TOUCH</span
+            >
+            <svg
+              width="17"
+              height="46"
+              viewBox="0 0 16 46"
+              class="shrink-0 border-none ml-[-1px]"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.17157 1.17157C3.42143 0.421429 2.40401 0 1.34315 0H0V46H8.34315C9.40401 46 10.4214 45.5786 11.1716 44.8284L14.8284 41.1716C15.5786 40.4214 16 39.404 16 38.3431V14.6569C16 13.596 15.5786 12.5786 14.8284 11.8284L4.17157 1.17157Z"
+                fill="#99FF00"
+              />
+            </svg>
+          </span>
+        </a>
+        <!-- Product categories: 1×12 (≤md), 2×6 (md–xl), 3×4 (≥xl), flex + justify-between only -->
+        <div
+          class="mt-[80px] flex flex-col gap-y-7 text-[22px] font-avant md:hidden"
+        >
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white text-[22px] transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Digital Asset & Skins</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Tournament & League Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Gaming Marketplaces</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Community & Fan Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>iGaming Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Trading & Fintech Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-tight !leading-[100%]"
+          >
+            <span>Marketplaces</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Betting & Analytics Tools</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Coaching Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Gamified SaaS Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Educational Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-[10px] text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+          >
+            <span>Web3 & Crypto Platforms</span>
+            <img
+              src="/assets/arrow.svg"
+              alt="Arrow"
+              class="h-[13px] w-[13px]"
+            />
+          </a>
+        </div>
+        <div
+          class="mt-[80px] hidden md:flex xl:hidden justify-between text-[22px] font-itc"
+        >
+          <div class="space-y-7">
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white text-[22px] transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Digital Asset & Skins</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Tournament & League Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Gaming Marketplaces</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Community & Fan Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Coaching Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Gamified SaaS Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+          </div>
+          <div class="space-y-7">
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>iGaming Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Trading & Fintech Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-tight !leading-[100%]"
+            >
+              <span>Marketplaces</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Betting & Analytics Tools</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Educational Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-[10px] lg:gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Web3 & Crypto Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="mt-[80px] hidden xl:flex justify-between text-[22px] font-avant"
+        >
+          <div class="space-y-7">
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white text-[22px] transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Digital Asset & Skins</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Tournament & League Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Gaming Marketplaces</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Community & Fan Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+          </div>
+          <div class="space-y-7">
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>iGaming Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Trading & Fintech Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-tight !leading-[100%]"
+            >
+              <span>Marketplaces</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Betting & Analytics Tools</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+          </div>
+          <div class="space-y-7">
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Coaching Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Gamified SaaS Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Educational Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-11 text-white transition hover:text-lime tracking-[0%] !leading-[100%]"
+            >
+              <span>Web3 & Crypto Platforms</span>
+              <img
+                src="/assets/arrow.svg"
+                alt="Arrow"
+                class="h-[13px] w-[13px]"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GAMING DNA Section -->
+      <section
+        class="relative flex flex-col gap-12 justify-between md:flex-row md:items-center md:gap-[50px] xl:gap-16 pt-[60px]"
+      >
+        <!-- 3D Pill graphic (primary) -->
+          <video
+            src="/assets/pill.webm"
+            alt="GAMING DNA - RAGEBITE"
+            class="min-w-0 flex-1 xl:w-[530px] xl:h-[712px] w-[189px] h-[254px] sm:w-[242px] sm:h-[325px] md:w-[320px] md:h-[431px] lg:max-w-[404px] lg:h-[543px] object-fill"
+            id="pill-img"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+        <div class="flex-1 md:max-w-[318px] lg:max-w-[667px]">
+          <p
+            class="mb-[30px] text-4 text-chakra text-[#E4FAFB] leading-[100%] tracking-[14%]"
+          >
+            // &nbsp;GAMING DNA
+          </p>
+          <h2
+            class="font-zcool leading-[83%] mb-[30px] text-[60px] tracking-[0%] lg:text-[80px] xl:text-[100px]"
+          >
+            We build with <br />a gaming mindset
+          </h2>
+          <div class="flex gap-[20px] items-start md:max-w-[300px] lg:max-w-[460px] xl:w-full">
+            <img
+              src="/assets/quote.svg"
+              alt="Quote"
+              class="w-[44px] h-[43px] mt-[7px] hidden xl:block"
+            />
+            <div class="flex flex-col gap-[30px]">
+              <p
+                class="italic text-avant text-[18px] leading-[150%] font-bold text-[#E4FAFB] tracking-[0%]"
+              >
+                We grew up building esports and gaming platforms where
+                engagement is non-negotiable. That mindset still drives how we
+                design and build products today.<br class="lg:block hidden xl:hidden" />
+                <br class="lg:block hidden xl:hidden" />
+              </p>
+              <a
+                href="#history"
+                class="inline-flex items-center gap-2 font-chakra text-[14px] w-[310px] leading-[100%] font-bold uppercase tracking-[14%] text-[#99FF00]"
+              >
+                LEARN MORE ABOUT OUR HISTORY
+                <img
+                  src="/assets/left-arrow.svg"
+                  alt="Arrow"
+                  class="h-[8px] w-[8px]"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Logo: show text fallback when image fails
+      const logoImg = document.getElementById("logo-img");
+      const logoFallback = document.getElementById("logo-fallback");
+      if (logoImg && logoFallback) {
+        logoImg.addEventListener("error", () => {
+          logoImg.classList.add("hidden");
+          logoFallback.classList.remove("hidden");
+        });
+      }
+
+      // Pill: show fallback when image fails
+      const pillImg = document.getElementById("pill-img");
+      const pillFallback = document.getElementById("pill-fallback");
+      if (pillImg && pillFallback) {
+        pillImg.addEventListener("load", () =>
+          pillFallback.classList.add("hidden"),
+        );
+        pillImg.addEventListener("error", () => {
+          pillImg.classList.add("hidden");
+          pillFallback.classList.remove("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
