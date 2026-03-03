@@ -23,7 +23,7 @@
   @font-face {
     font-family: 'ITC Avant Garde Gothic Pro';
     src: url('/assets/ITCAvantGardePro-Md.woff2') format('woff2');
-    font-weight: 600;
+    font-weight: 400;
     font-display: swap;
   }
 }
