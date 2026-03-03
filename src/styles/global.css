@@ -1,6 +1,15 @@
 /* Fonts: Adobe Fonts (xtg2fqq) + Google Fonts fallback + Fontsource */
 @import "@fontsource/gochi-hand";
 
+/* ITC Avant Garde – must be at top level (not inside a class) */
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('/assets/ITCAvantGardePro-Md.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +19,7 @@
   font-family: "zcool-qingke-huangyou", "ZCOOL QingKe HuangYou", sans-serif;
 }
 .font-avant {
-  font-family: "itc-avant-garde-gothic-pro", system-ui, sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", "ITC Avant Garde Gothic Pro", system-ui, sans-serif;
 }
 .font-chakra {
   font-family: "chakra-petch", "Chakra Petch", system-ui, sans-serif;
@@ -18,14 +27,8 @@
 .font-patrick {
   font-family: "patrick-hand-sc", "Patrick Hand SC", cursive;
 }
-
 .font-itc {
-  @font-face {
-    font-family: 'ITC Avant Garde Gothic Pro';
-    src: url('/assets/ITCAvantGardePro-Md.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-  }
+  font-family: "ITC Avant Garde Gothic Pro", sans-serif;
 }
 
 /* GET IN TOUCH button - rounded left, arrow right */
