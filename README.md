@@ -24,6 +24,14 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+## Deployment and Git LFS (video not showing)
+
+The video `public/assets/pill.webm` is tracked with **Git LFS**. If the video doesn’t display after deploy, the build likely has only the LFS pointer, not the real file.
+
+- **Vercel:** Install the [Git LFS](https://github.com/marketplace/actions/git-lfs) action, or in Project Settings → General → Git set “Include Git LFS objects” (if available), or add a build step that runs `git lfs pull` before `npm run build`.
+- **Netlify:** Enable [Git LFS support](https://docs.netlify.com/configure-builds/file-conversions/#git-lfs) or run `git lfs pull` in a build command, e.g. `git lfs pull && npm run build`.
+- **Other CI:** Before `npm run build`, run `git lfs install` and `git lfs pull` so the real file is in `public/assets/` when the site is built.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
